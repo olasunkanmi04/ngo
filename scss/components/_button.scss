@@ -1,0 +1,17 @@
+.cta__button {
+    box-shadow: 0 2px 8px 0 rgba(225, 129, 63, .35);
+    background-color: #ed9b40;
+    padding: 6px 18px;
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+
+    &:hover {
+        color: #ffffff !important;
+        background-color: rgba(#ED9B40, 0.9);
+        box-shadow: 0 2px 8px 0 rgba(248, 128, 48, 0.35);
+
+    }
+}

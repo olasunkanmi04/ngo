@@ -1,0 +1,39 @@
+.footer {
+    padding-bottom: 50px;
+    text-align: center;
+
+    &__copyright {
+        color: #807E9C;
+        font-style: normal;
+        line-height: normal;
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        display: inline-block;
+        margin-right: 30px;
+
+        a {
+            color: #ed9b40;
+        }
+    }
+
+    &__social {
+        margin-top: 10px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: #ed9b40;
+
+            &:hover {
+                fill: #f18f1e;
+            }
+        }
+    }
+
+
+}
