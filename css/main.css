@@ -505,7 +505,6 @@ body {
   background-color: #ed9b40;
   padding: 6px 18px;
   height: 40px;
-  width: 120px;
   font-size: 14px;
   font-weight: 600;
   color: #ffffff; }
@@ -705,7 +704,7 @@ body {
     vertical-align: middle;
     line-height: 60px;
     font-size: 14px;
-    color: 010101;
+    color: #010101;
     margin-left: 16px; }
   .explore-ngo__category:hover {
     -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15);
@@ -721,3 +720,72 @@ body {
 
 body {
   background: #F9FBFD; }
+
+.ngo__profile {
+  display: flex; }
+  .ngo__profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .ngo__profile-info {
+    align-self: center;
+    margin-left: 10px; }
+  .ngo__profile-name {
+    font-weight: 600;
+    margin-bottom: 5px; }
+  .ngo__profile svg {
+    fill: #ed9b40;
+    width: 12px;
+    height: 12px; }
+  .ngo__profile-description {
+    margin-bottom: 30px; }
+    .ngo__profile-description p {
+      font-size: 16px;
+      line-height: 24px; }
+  .ngo__profile-documents-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .ngo__profile-documents-individual {
+    background: #FFFFFF;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+    -ms-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    padding-left: 16px;
+    min-width: fit-content; }
+    .ngo__profile-documents-individual svg {
+      width: 20px;
+      height: 20px;
+      fill: #ed9b40; }
+    .ngo__profile-documents-individual span {
+      vertical-align: middle;
+      line-height: 60px;
+      font-size: 14px;
+      color: #010101;
+      margin-left: 16px; }
+    .ngo__profile-documents-individual:hover {
+      -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15); }
+  .ngo__profile-documents-column {
+    padding-left: 0; }
+  .ngo__profile-gallery {
+    margin-top: 10px; }
+    .ngo__profile-gallery-title {
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .ngo__profile-gallery-image {
+      margin-bottom: 10px; }
+  .ngo__profile-video iframe {
+    width: 98%;
+    height: 300px; }

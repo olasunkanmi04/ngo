@@ -1,0 +1,108 @@
+.ngo {
+    &__profile {
+        display: flex;
+
+        &-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &-info {
+            align-self: center;
+            margin-left: 10px;
+        }
+
+        &-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        svg {
+            fill: #ed9b40;
+            width: 12px;
+            height: 12px;
+        }
+
+        &-description {
+            margin-bottom: 30px;
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &-documents {
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            &-individual {
+                background: #FFFFFF;
+                border: 1px solid rgba(225, 225, 225, 0.5);
+                box-sizing: border-box;
+                border-radius: 3px;
+                margin-bottom: 20px;
+                width: 100%;
+                height: 60px;
+                overflow: hidden;
+                position: relative;
+                transition: 0.3s all linear;
+                -moz-transition: 0.3s all linear;
+                -webkit-transition: 0.3s all linear;
+                -ms-transition: 0.3s all linear;
+                -o-transition: 0.3s all linear;
+                padding-left: 16px;
+                min-width: fit-content;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #ed9b40;
+                }
+
+                span {
+                    vertical-align: middle;
+                    line-height: 60px;
+                    font-size: 14px;
+                    color: #010101;
+                    margin-left: 16px;
+                }
+
+                &:hover {
+                    -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15);
+                }
+            }
+
+            &-column {
+                padding-left: 0;
+            }
+        }
+
+        &-gallery {
+            margin-top: 10px;
+
+            &-title {
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            &-image {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-video {
+            iframe {
+                width: 98%;
+                height: 300px;
+            }
+        }
+
+    }
+}
