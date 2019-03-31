@@ -507,7 +507,8 @@ body {
   height: 40px;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
   .cta__button:hover {
     color: #ffffff !important;
     background-color: rgba(237, 155, 64, 0.9);
@@ -790,3 +791,72 @@ body {
   .ngo__profile-video iframe {
     width: 98%;
     height: 300px; }
+  .ngo__profile-total {
+    margin-bottom: 20px; }
+    .ngo__profile-total p:first-child {
+      text-align: center;
+      font-size: 30px;
+      color: #ed9b40;
+      margin-bottom: 10px; }
+    .ngo__profile-total p:nth-child(2) {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600; }
+
+.ngo__campaign {
+  background: #FFFFFF;
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear; }
+  .ngo__campaign-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700; }
+  .ngo__campaign-heading {
+    font-weight: 600;
+    font-size: 20px; }
+  .ngo__campaign-info a {
+    color: #ed9b40; }
+  .ngo__campaign-button-wrap {
+    margin-top: 20px; }
+    .ngo__campaign-button-wrap .cta__button {
+      padding: 0;
+      line-height: 40px; }
+  .ngo__campaign-price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #949494; }
+    .ngo__campaign-price span {
+      font-weight: 600;
+      color: #000000;
+      font-size: 18px; }
+  .ngo__campaign-share {
+    display: flex;
+    margin-left: auto; }
+    .ngo__campaign-share svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+      fill: #949494; }
+
+.ui-progressbar .ui-progressbar-value {
+  margin: 0 !important;
+  background: #ed9b40;
+  border-radius: 4px;
+  border: none; }
+
+.progressbar {
+  height: 10px;
+  border-radius: 4px !important;
+  border: 1px solid #ed9b40 !important;
+  margin-bottom: 10px;
+  margin-top: 10px; }
