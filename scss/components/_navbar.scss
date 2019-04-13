@@ -40,7 +40,7 @@
     border: 2px solid #ed9b40 !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .navbar__header {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -49,6 +49,23 @@
             background-color: #fff;
             padding: 20px;
             width: 50px !important;
+
+            div {
+                text-align: center;
+            }
         }
+
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+
+    .navbar__header-item {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .navbar__header-button {
+        margin: 0;
     }
 }

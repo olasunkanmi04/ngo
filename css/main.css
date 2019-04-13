@@ -541,14 +541,23 @@ body {
 .navbar-light .navbar-toggler {
   border: 2px solid #ed9b40 !important; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar__header {
     padding-top: 20px;
     padding-bottom: 20px; }
     .navbar__header .navbar-collapse {
       background-color: #fff;
       padding: 20px;
-      width: 50px !important; } }
+      width: 50px !important; }
+      .navbar__header .navbar-collapse div {
+        text-align: center; }
+    .navbar__header .navbar-nav {
+      text-align: center; }
+  .navbar__header-item {
+    padding: 0;
+    margin-bottom: 15px; }
+  .navbar__header-button {
+    margin: 0; } }
 
 .footer {
   padding-bottom: 50px;
