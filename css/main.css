@@ -573,8 +573,12 @@ body {
   .footer__list {
     display: inline-block;
     margin-right: 30px; }
+    .footer__list:last-child {
+      margin-right: 0; }
     .footer__list a {
       color: #ed9b40; }
+    .footer__list-wrap {
+      padding: 0 10px; }
   .footer__social {
     margin-top: 10px; }
     .footer__social svg {
@@ -982,3 +986,130 @@ body {
 @media screen and (max-width: 767px) {
   .donate__block {
     max-width: 400px; } }
+
+.login__form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 0 20px; }
+
+.login__title {
+  font-size: 45px;
+  color: #000000;
+  line-height: 65px;
+  font-weight: 700;
+  text-align: center; }
+
+.login__divider {
+  display: flex;
+  margin-top: 20px;
+  align-items: center; }
+  .login__divider span {
+    margin: 0 10px;
+    color: #000000;
+    font-size: 14px; }
+  .login__divider hr {
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed #dedede; }
+
+.login__google, .login__facebook {
+  display: flex;
+  margin-top: 20px; }
+  .login__google-icon, .login__facebook-icon {
+    background: #4C70BB;
+    width: 14.3%;
+    height: 80px;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    line-height: 80px; }
+    .login__google-icon svg, .login__facebook-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #ffffff; }
+  .login__google-button, .login__facebook-button {
+    width: 85.7%;
+    border-radius: 0 4px 4px 0;
+    height: 80px;
+    text-align: center;
+    background: #3b5998; }
+    .login__google-button:hover, .login__facebook-button:hover {
+      background: rgba(59, 89, 152, 0.9); }
+    .login__google-button span, .login__facebook-button span {
+      color: #ffffff;
+      font-size: 17px;
+      line-height: 80px; }
+
+.login__google-icon {
+  background: #f03e31;
+  width: 14.3%;
+  height: 80px;
+  border-radius: 4px 0 0 4px;
+  text-align: center;
+  line-height: 80px; }
+  .login__google-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff; }
+
+.login__google-button {
+  width: 85.7%;
+  border-radius: 0 4px 4px 0;
+  height: 80px;
+  text-align: center;
+  background: #d62d20; }
+  .login__google-button:hover {
+    background: rgba(214, 45, 32, 0.9); }
+  .login__google-button span {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 80px; }
+
+.login__input {
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  color: #000000;
+  font-size: 14px;
+  padding: 15px 25px;
+  letter-spacing: 0.4px;
+  font-weight: normal; }
+  .login__input::placeholder {
+    color: #000000; }
+
+.login__pw {
+  position: relative;
+  margin-top: 20px; }
+
+.login__fgpw {
+  position: absolute;
+  top: 0;
+  line-height: 80px;
+  color: #ed9b40;
+  right: 5%; }
+  .login__fgpw:hover {
+    color: #ec830a; }
+
+.login__btn {
+  height: 80px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal; }
+
+.login__ngtv {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000; }
+  .login__ngtv a {
+    color: #ed9b40; }
+    .login__ngtv a:hover {
+      color: #ec830a; }
+
+@media screen and (max-width: 479px) {
+  .login__form {
+    width: 100%;
+    padding: 0 10px; } }

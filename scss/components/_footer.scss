@@ -16,8 +16,16 @@
         display: inline-block;
         margin-right: 30px;
 
+        &:last-child {
+            margin-right: 0;
+        }
+
         a {
             color: #ed9b40;
+        }
+
+        &-wrap {
+            padding: 0 10px;
         }
     }
 
