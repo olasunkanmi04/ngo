@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <script src="js/csi.min.js"></script>
-    <title>Login</title>
+    <title>Create account</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
     <div class="explore-ngo__body pb-0">
         <div class="login__form">
-            <h3 class="login__title">Sign in</h3>
+            <h3 class="login__title signup__title">Create an account</h3>
 
             <a href="#">
                 <div class="login__google">
@@ -29,7 +29,7 @@
                         </svg>
                     </div>
                     <div class="login__facebook-button">
-                        <span>Sign in with Facebook</span>
+                        <span>Create an account with Facebook</span>
                     </div>
                 </div>
             </a>
@@ -42,7 +42,7 @@
                         </svg>
                     </div>
                     <div class="login__google-button">
-                        <span>Sign in with Google</span>
+                        <span>Create an account with Google</span>
                     </div>
                 </div>
             </a>
@@ -54,14 +54,13 @@
             </div>
 
             <form action="">
+                <input type="text" class="login__input" placeholder="NGO Name">
                 <input type="email" class="login__input" placeholder="Email">
-                <div class="login__pw">
-                    <input type="password" class="login__input mt-0" placeholder="Password">
-                    <a href="#" class="login__fgpw">Forgot?</a>
-                </div>
-                <button class="cta__button btn login__btn">Sign in</button>
+                <input type="password" class="login__input" placeholder="Password">
+                <input type="password" class="login__input" placeholder="Confirm Password">
+                <button class="cta__button btn login__btn">Create account</button>
             </form>
-            <p class="login__ngtv">Don't have an account? <a href="signup.html">Create account</a></p>
+            <p class="login__ngtv">Already have an account? <a href="login.html">Login</a></p>
         </div>
     </div>
 
