@@ -21,49 +21,106 @@
         <div class="login__form">
             <h3 class="login__title">Sign in</h3>
 
-            <form action="">
-                <input type="email" class="login__input" placeholder="Email">
-                <div class="login__pw">
-                    <input type="password" class="login__input mt-0" placeholder="Password">
-                    <a href="#" class="login__fgpw">Forgot?</a>
-                </div>
-                <button class="cta__button btn login__btn">Sign in</button>
-            </form>
+            <ul class="nav nav-pills mb-3 donate__tab" id="pills-tab" role="tablist">
+                <li class="donate__sub-type-item">
+                    <a class="donate__sub-type-link active" id="ngo-login-tab" data-toggle="pill" href="#ngo-login"
+                        role="tab" aria-controls="ngo-login" aria-selected="true">NGO</a>
+                </li>
+                <li class="donate__sub-type-item">
+                    <a class="donate__sub-type-link" id="user-login-tab" data-toggle="pill" href="#user-login"
+                        role="tab" aria-controls="user-login" aria-selected="false">User</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="ngo-login" role="tabpanel" aria-labelledby="ngo-login-tab">
+                    <form action="">
+                        <input type="email" class="login__input" placeholder="Email">
+                        <div class="login__pw">
+                            <input type="password" class="login__input mt-0" placeholder="Password">
+                            <a href="#" class="login__fgpw">Forgot?</a>
+                        </div>
+                        <button class="cta__button btn login__btn">Sign in</button>
+                    </form>
 
-            <div class="login__divider">
-                <hr>
-                <span>or</span>
-                <hr>
+                    <div class="login__divider">
+                        <hr>
+                        <span>or</span>
+                        <hr>
+                    </div>
+
+                    <a href="#">
+                        <div class="login__google">
+                            <div class="login__facebook-icon">
+                                <svg class="icon icon-facebook-logo">
+                                    <use xlink:href="#icon-facebook-logo"></use>
+                                </svg>
+                            </div>
+                            <div class="login__facebook-button">
+                                <span>Sign in with Facebook</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="login__google">
+                            <div class="login__google-icon">
+                                <svg class="icon icon-google">
+                                    <use xlink:href="#icon-google"></use>
+                                </svg>
+                            </div>
+                            <div class="login__google-button">
+                                <span>Sign in with Google</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <p class="login__ngtv">Don't have an account? <a href="signup.html">Create account</a></p>
+                </div>
+                <div class="tab-pane fade" id="user-login" role="tabpanel" aria-labelledby="user-login-tab">
+                    <form action="">
+                        <input type="email" class="login__input" placeholder="Email">
+                        <div class="login__pw">
+                            <input type="password" class="login__input mt-0" placeholder="Password">
+                            <a href="#" class="login__fgpw">Forgot?</a>
+                        </div>
+                        <button class="cta__button btn login__btn">Sign in</button>
+                    </form>
+
+                    <div class="login__divider">
+                        <hr>
+                        <span>or</span>
+                        <hr>
+                    </div>
+
+                    <a href="#">
+                        <div class="login__google">
+                            <div class="login__facebook-icon">
+                                <svg class="icon icon-facebook-logo">
+                                    <use xlink:href="#icon-facebook-logo"></use>
+                                </svg>
+                            </div>
+                            <div class="login__facebook-button">
+                                <span>Sign in with Facebook</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="login__google">
+                            <div class="login__google-icon">
+                                <svg class="icon icon-google">
+                                    <use xlink:href="#icon-google"></use>
+                                </svg>
+                            </div>
+                            <div class="login__google-button">
+                                <span>Sign in with Google</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <p class="login__ngtv">Don't have an account? <a href="signup.html">Create account</a></p>
+                </div>
             </div>
-
-            <a href="#">
-                <div class="login__google">
-                    <div class="login__facebook-icon">
-                        <svg class="icon icon-facebook-logo">
-                            <use xlink:href="#icon-facebook-logo"></use>
-                        </svg>
-                    </div>
-                    <div class="login__facebook-button">
-                        <span>Sign in with Facebook</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="login__google">
-                    <div class="login__google-icon">
-                        <svg class="icon icon-google">
-                            <use xlink:href="#icon-google"></use>
-                        </svg>
-                    </div>
-                    <div class="login__google-button">
-                        <span>Sign in with Google</span>
-                    </div>
-                </div>
-            </a>
-
-
-            <p class="login__ngtv">Don't have an account? <a href="signup.html">Create account</a></p>
         </div>
     </div>
 

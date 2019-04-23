@@ -603,6 +603,10 @@ body {
   padding: 10px;
   -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.15); }
+  .explore-ngo__search::placeholder {
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal; }
   .explore-ngo__search-button {
     background-color: #ed9b40;
     position: relative;
@@ -987,132 +991,151 @@ body {
   .donate__block {
     max-width: 400px; } }
 
-.login__form {
-  width: 400px;
-  margin: 50px auto;
-  padding: 0 10px; }
-
-.login__title {
-  font-size: 45px;
-  color: #000000;
-  line-height: 65px;
-  font-weight: 700;
-  text-align: center; }
-
-.login__divider {
-  display: flex;
-  margin-top: 20px;
-  align-items: center; }
-  .login__divider span {
-    margin: 0 10px;
+.login {
+  color: #ec830a !important;
+  font-weight: 700; }
+  .login:hover {
+    color: #ed9b40 !important; }
+  .login__form {
+    width: 400px;
+    margin: 50px auto;
+    margin-top: 20px;
+    padding: 0 10px; }
+  .login__title {
+    font-size: 35px;
     color: #000000;
-    font-size: 14px; }
-  .login__divider hr {
-    margin: 0;
-    width: 100%;
-    height: 1px;
-    border-top: 1px dashed #dedede; }
-
-.login__google, .login__facebook {
-  display: flex;
-  margin-top: 20px; }
-  .login__google-icon, .login__facebook-icon {
-    background: #4C70BB;
+    line-height: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px; }
+  .login__divider {
+    display: flex;
+    margin-top: 20px;
+    align-items: center; }
+    .login__divider span {
+      margin: 0 10px;
+      color: #000000;
+      font-size: 14px; }
+    .login__divider hr {
+      margin: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 1px dashed #dedede; }
+  .login__google, .login__facebook {
+    display: flex;
+    margin-top: 20px; }
+    .login__google-icon, .login__facebook-icon {
+      background: #4C70BB;
+      width: 14.3%;
+      height: 80px;
+      border-radius: 4px 0 0 4px;
+      text-align: center;
+      line-height: 80px; }
+      .login__google-icon svg, .login__facebook-icon svg {
+        width: 24px;
+        height: 24px;
+        fill: #ffffff; }
+    .login__google-button, .login__facebook-button {
+      width: 85.7%;
+      border-radius: 0 4px 4px 0;
+      height: 80px;
+      text-align: center;
+      background: #3b5998; }
+      .login__google-button:hover, .login__facebook-button:hover {
+        background: rgba(59, 89, 152, 0.9); }
+      .login__google-button span, .login__facebook-button span {
+        color: #ffffff;
+        font-size: 17px;
+        line-height: 80px; }
+  .login__google-icon {
+    background: #f03e31;
     width: 14.3%;
     height: 80px;
     border-radius: 4px 0 0 4px;
     text-align: center;
     line-height: 80px; }
-    .login__google-icon svg, .login__facebook-icon svg {
+    .login__google-icon svg {
       width: 24px;
       height: 24px;
       fill: #ffffff; }
-  .login__google-button, .login__facebook-button {
+  .login__google-button {
     width: 85.7%;
     border-radius: 0 4px 4px 0;
     height: 80px;
     text-align: center;
-    background: #3b5998; }
-    .login__google-button:hover, .login__facebook-button:hover {
-      background: rgba(59, 89, 152, 0.9); }
-    .login__google-button span, .login__facebook-button span {
+    background: #d62d20; }
+    .login__google-button:hover {
+      background: rgba(214, 45, 32, 0.9); }
+    .login__google-button span {
       color: #ffffff;
       font-size: 17px;
       line-height: 80px; }
-
-.login__google-icon {
-  background: #f03e31;
-  width: 14.3%;
-  height: 80px;
-  border-radius: 4px 0 0 4px;
-  text-align: center;
-  line-height: 80px; }
-  .login__google-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #ffffff; }
-
-.login__google-button {
-  width: 85.7%;
-  border-radius: 0 4px 4px 0;
-  height: 80px;
-  text-align: center;
-  background: #d62d20; }
-  .login__google-button:hover {
-    background: rgba(214, 45, 32, 0.9); }
-  .login__google-button span {
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 80px; }
-
-.login__input {
-  margin-top: 20px;
-  height: 80px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #E1E1E1;
-  color: #000000;
-  font-size: 14px;
-  padding: 15px 25px;
-  letter-spacing: 0.4px;
-  font-weight: normal; }
-  .login__input::placeholder {
-    color: #c4c4c4;
-    font-weight: 200 !important; }
-
-.login__pw {
-  position: relative;
-  margin-top: 20px; }
-
-.login__fgpw {
-  position: absolute;
-  top: 0;
-  line-height: 80px;
-  color: #ed9b40;
-  right: 5%; }
-  .login__fgpw:hover {
-    color: #ec830a; }
-
-.login__btn {
-  height: 80px;
-  width: 100%;
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: normal; }
-
-.login__ngtv {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #000000; }
-  .login__ngtv a {
+  .login__input {
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    color: #000000;
+    font-size: 14px;
+    padding: 15px 25px;
+    letter-spacing: 0.4px;
+    font-weight: normal; }
+    .login__input::placeholder {
+      color: #c4c4c4;
+      font-weight: 200 !important; }
+  .login__pw {
+    position: relative;
+    margin-top: 20px; }
+  .login__fgpw {
+    position: absolute;
+    top: 0;
+    line-height: 80px;
     color: #ed9b40;
-    font-weight: 600; }
-    .login__ngtv a:hover {
+    right: 5%; }
+    .login__fgpw:hover {
       color: #ec830a; }
+  .login__btn {
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal; }
+  .login__ngtv {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000; }
+    .login__ngtv a {
+      color: #ed9b40;
+      font-weight: 600; }
+      .login__ngtv a:hover {
+        color: #ec830a; }
 
 .signup__title {
   font-size: 40px; }
+
+#user-login.active {
+  animation: slide-left 1s ease-out; }
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(5%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+#ngo-login.active {
+  animation: slide-right 1s ease-out; }
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 @media screen and (max-width: 479px) {
   .login__form {

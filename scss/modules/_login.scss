@@ -1,16 +1,25 @@
 .login {
+    color: #ec830a !important;
+    font-weight: 700;
+
+    &:hover {
+        color: #ed9b40 !important;
+    }
+
     &__form {
         width: 400px;
         margin: 50px auto;
+        margin-top: 20px;
         padding: 0 10px;
     }
 
     &__title {
-        font-size: 45px;
+        font-size: 35px;
         color: #000000;
-        line-height: 65px;
+        line-height: 50px;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     &__divider {
@@ -169,6 +178,38 @@
 .signup {
     &__title {
         font-size: 40px;
+    }
+}
+
+#user-login.active {
+    animation: slide-left 1s ease-out;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#ngo-login.active {
+    animation: slide-right 1s ease-out;
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
