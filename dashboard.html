@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <script src="js/csi.min.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div data-include="svg.html"></div>
+    <div data-include="login-navbar.html"></div>
+
+    <div class="explore-ngo__body pb-0 dashboard__header">
+        <div class="dashboard__header-wrap">
+            <h3>Dashboard</h3>
+
+
+            <ul class="dashboard__nav">
+                <li class="dashboard__items">
+                    <a href="#" class="dashboard__links active">Overview</a>
+                </li>
+                <li class="dashboard__items">
+                    <a href="#" class="dashboard__links">Campaigns</a>
+                </li>
+                <li class="dashboard__items">
+                    <a href="#" class="dashboard__links">Profile</a>
+                </li>
+                <li class="dashboard__items">
+                    <a href="#" class="dashboard__links">Notification</a>
+                </li>
+            </ul>
+
+
+            <ul class="dashboard__nav dashboard__nav-resp">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Overview
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item navbar__profile-dropdown" href="#">Overview</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item navbar__profile-dropdown" href="#">Campaigns</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item navbar__profile-dropdown" href="#">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item navbar__profile-dropdown" href="#">Notification</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="dashboard__overview">
+        <div class="row mx-0">
+            <div class="col-lg-5 col-md-7 col-sm-12 overview__earning-col">
+                <div class="overview__earning">
+                    <div class="overview__top">
+                        <h3 class="overview__title">Earnings</h3>
+                        <nav>
+                            <div class="nav" id="nav-tab" role="tablist">
+                                <a class="overview__earning-link active" id="last7days-tab" data-toggle="tab"
+                                    href="#last7days" role="tab" aria-controls="last7days" aria-selected="true">7
+                                    days
+                                </a>
+                                <a class="overview__earning-link" id="last30days-tab" data-toggle="tab"
+                                    href="#last30days" role="tab" aria-controls="last30days" aria-selected="false">30
+                                    days</a>
+                                <a class="overview__earning-link" id="allTime-tab" data-toggle="tab" href="#allTime"
+                                    role="tab" aria-controls="allTime" aria-selected="false">All time</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active overview__earning-amt" id="last7days" role="tabpanel"
+                            aria-labelledby="last7days-tab">₦<span> 0</span></div>
+                        <div class="tab-pane fade overview__earning-amt" id="last30days" role="tabpanel"
+                            aria-labelledby="last30days-tab">₦<span> 0</span></div>
+                        <div class="tab-pane fade overview__earning-amt" id="allTime" role="tabpanel"
+                            aria-labelledby="allTime-tab">₦<span> 0</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12 col-sm-12 overview__campgn-col">
+                <h3 class="overview__title">Running Campaigns</h3>
+
+                <div class="row mx-0">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                        <a href="#">
+                            <div class="overview__campgn-individual">
+                                <div class="overview__campgn-title">
+                                    <h3 class="overview__campgn-heading">Back2School</h3>
+                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                                </div>
+                                <div id="progressFirst" class="overview__campgn-progress"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                        <a href="#">
+                            <div class="overview__campgn-individual">
+                                <div class="overview__campgn-title">
+                                    <h3 class="overview__campgn-heading">Back2School</h3>
+                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                                </div>
+                                <div id="progressSecond" class="overview__campgn-progress"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                        <a href="#">
+                            <div class="overview__campgn-individual">
+                                <div class="overview__campgn-title">
+                                    <h3 class="overview__campgn-heading">Makoko Outreach</h3>
+                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                                </div>
+                                <div id="progressThird" class="overview__campgn-progress"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                        <a href="#">
+                            <div class="overview__campgn-individual">
+                                <div class="overview__campgn-title">
+                                    <h3 class="overview__campgn-heading">Back2School</h3>
+                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                                </div>
+                                <div id="progressSecond" class="overview__campgn-progress"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                        <a href="#">
+                            <div class="overview__campgn-individual">
+                                <div class="overview__campgn-title">
+                                    <h3 class="overview__campgn-heading">Makoko Outreach</h3>
+                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                                </div>
+                                <div id="progressThird" class="overview__campgn-progress"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overview__transactions">
+
+        </div>
+    </div>
+
+    <div data-include="footer.html"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#progressFirst").progressbar({
+                value: 80
+            });
+
+            $("#progressSecond").progressbar({
+                value: 20
+            });
+
+            $("#progressThird").progressbar({
+                value: 50
+            });
+        });
+    </script>
+</body>
+
+</html>

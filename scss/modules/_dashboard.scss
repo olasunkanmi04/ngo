@@ -1,0 +1,206 @@
+.dashboard {
+    &__header {
+        padding-top: 80px;
+        background-color: #fff;
+        height: 200px;
+        -webkit-box-shadow: 5px 1px 2px rgba(190, 190, 190, 0.5);
+        box-shadow: 5px 1px 2px rgba(190, 190, 190, 0.5);
+
+        &-wrap {
+            padding-left: 15px;
+            padding-top: 40px;
+
+            h3 {
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        margin-top: 30px;
+
+        &-resp {
+            display: none;
+        }
+    }
+
+    &__items {
+        margin-right: 40px;
+    }
+
+    &__links {
+        color: #8b8b8b;
+        font-weight: 600;
+        padding-bottom: 3px;
+
+        &.active,
+        &:hover {
+            color: #000000;
+            border-bottom: 3px solid #ed9b40;
+            transition: border .4s ease-in-out;
+        }
+    }
+
+    &__overview {
+        padding: 50px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+.overview {
+    &__earning {
+        background: #FFFFFF;
+        border: 1px solid rgba(225, 225, 225, 0.5);
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        transition: 0.3s all linear;
+        -moz-transition: 0.3s all linear;
+        -webkit-transition: 0.3s all linear;
+        -ms-transition: 0.3s all linear;
+        -o-transition: 0.3s all linear;
+        height: 200px;
+
+        &-col {
+            padding-left: 0;
+        }
+
+        &-link {
+            margin-right: 20px;
+            font-size: 12px;
+            padding-bottom: 3px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active,
+            &:hover {
+                border-bottom: 3px solid #ed9b40;
+                transition: border .4s ease-in-out;
+            }
+        }
+
+        &-amt {
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+        }
+    }
+
+    &__top {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: auto;
+    }
+
+    &__campgn {
+        margin-top: 20px;
+
+        &-col {
+            padding-right: 0;
+        }
+
+        &-heading {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+
+        &-progress {
+            height: 7px !important;
+            border-radius: 4px !important;
+            border: 1px solid #419D78 !important;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        &-individual {
+            box-shadow: 0 0 3px rgba(#000000, 0.16);
+            padding: 20px;
+            padding-bottom: 10px;
+            border-radius: 4px;
+            background-color: #fff;
+            transition: 0.3s all linear;
+            -moz-transition: 0.3s all linear;
+            -webkit-transition: 0.3s all linear;
+            -ms-transition: 0.3s all linear;
+            -o-transition: 0.3s all linear;
+
+            &:hover {
+                -webkit-box-shadow: 6px 4px 20px rgba(#000000, 0.16);
+                box-shadow: 6px 4px 20px rgba(#000000, 0.16);
+            }
+
+            &:first-child {
+                margin-top: 20px;
+            }
+        }
+
+        &-price {
+            font-size: 12px;
+            color: #8b8b8b;
+
+            span {
+                color: #000000;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+
+    &-title {
+        margin-right: auto;
+    }
+
+    &-col {
+        padding-right: 0;
+    }
+}
+
+
+.dropdown-toggle::after {
+    vertical-align: middle;
+    margin-left: 1.255em;
+}
+
+@media screen and (max-width:991px) {
+
+    .overview__earning-col,
+    .overview__campgn-col {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .dashboard__nav {
+        display: none;
+    }
+
+    .dashboard__nav-resp {
+        display: block;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .dashboard__overview {
+        padding: 50px 10px;
+    }
+}
