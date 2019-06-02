@@ -1121,7 +1121,8 @@ body {
     width: 100%;
     margin-top: 20px;
     font-size: 18px;
-    font-weight: normal; }
+    font-weight: normal;
+    line-height: 68px; }
   .login__ngtv {
     margin-top: 20px;
     text-align: center;
@@ -1304,6 +1305,98 @@ body {
 
 .overview-col {
   padding-right: 0; }
+
+.overview__transaction {
+  background: #ffffff;
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear; }
+  .overview__transaction-filter {
+    display: flex; }
+  .overview__transaction-sort-wrap {
+    margin-right: auto; }
+    .overview__transaction-sort-wrap label {
+      color: #050609;
+      font-size: 14px; }
+    .overview__transaction-sort-wrap .selectric-wrapper {
+      display: inline-block;
+      vertical-align: middle; }
+    .overview__transaction-sort-wrap .selectric {
+      border: 1px solid #DEDEDE;
+      background: #ffffff;
+      border-radius: 4px;
+      height: 30px;
+      margin-left: 5px; }
+      .overview__transaction-sort-wrap .selectric .label {
+        line-height: 30px;
+        font-size: 14px;
+        color: #050609; }
+      .overview__transaction-sort-wrap .selectric .button {
+        height: 29px;
+        width: 30px; }
+        .overview__transaction-sort-wrap .selectric .button::after {
+          border-top-color: #050609; }
+    .overview__transaction-sort-wrap .selectric-items {
+      border: none; }
+    .overview__transaction-sort-wrap .selectric-items li {
+      background: #fff;
+      color: #050609; }
+      .overview__transaction-sort-wrap .selectric-items li:hover {
+        background: #ed9b40;
+        color: #fff; }
+    .overview__transaction-sort-wrap .selectric-items li.highlighted {
+      background: #ed9b40;
+      color: #fff; }
+  .overview__transaction-search {
+    height: 30px;
+    display: flex;
+    width: 60%;
+    border-radius: 4px;
+    max-width: 270px; }
+    .overview__transaction-search input {
+      height: 28px;
+      width: 80%;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #050609;
+      font-weight: normal;
+      border-radius: 4px 0 0 4px;
+      border: 1px solid #DEDEDE; }
+    .overview__transaction-search-icon {
+      width: 20%;
+      height: 28px;
+      background-color: #ed9b40;
+      border: 1px solid #ed9b40;
+      border-radius: 0 4px 4px 0; }
+      .overview__transaction-search-icon svg {
+        width: 17px;
+        height: 14px; }
+  .overview__transaction-table {
+    width: 100%;
+    margin-top: 15px; }
+    .overview__transaction-table-wrap {
+      overflow-x: scroll; }
+    .overview__transaction-table th {
+      font-size: 14px;
+      color: #050609;
+      font-weight: 500;
+      padding: 14px 5px;
+      white-space: nowrap; }
+    .overview__transaction-table td {
+      font-size: 14px;
+      color: #050609;
+      padding: 14px 5px;
+      white-space: nowrap; }
+    .overview__transaction-table tr:nth-child(odd) {
+      background-color: rgba(237, 155, 64, 0.05); }
 
 .dropdown-toggle::after {
   vertical-align: middle;

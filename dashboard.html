@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/selectric.css">
     <script src="js/csi.min.js"></script>
     <title>Dashboard</title>
 </head>
@@ -61,6 +62,70 @@
 
 
     <div class="dashboard__overview">
+        <h3 class="overview__title">Running Campaigns</h3>
+
+        <div class="row mx-0 mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                <a href="#">
+                    <div class="overview__campgn-individual">
+                        <div class="overview__campgn-title">
+                            <h3 class="overview__campgn-heading">Back2School</h3>
+                            <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                        </div>
+                        <div id="progressFirst" class="overview__campgn-progress"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                <a href="#">
+                    <div class="overview__campgn-individual">
+                        <div class="overview__campgn-title">
+                            <h3 class="overview__campgn-heading">Back2School</h3>
+                            <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                        </div>
+                        <div id="progressSecond" class="overview__campgn-progress"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                <a href="#">
+                    <div class="overview__campgn-individual">
+                        <div class="overview__campgn-title">
+                            <h3 class="overview__campgn-heading">Makoko Outreach</h3>
+                            <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                        </div>
+                        <div id="progressThird" class="overview__campgn-progress"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                <a href="#">
+                    <div class="overview__campgn-individual">
+                        <div class="overview__campgn-title">
+                            <h3 class="overview__campgn-heading">Back2School</h3>
+                            <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                        </div>
+                        <div id="progressSecond" class="overview__campgn-progress"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
+                <a href="#">
+                    <div class="overview__campgn-individual">
+                        <div class="overview__campgn-title">
+                            <h3 class="overview__campgn-heading">Makoko Outreach</h3>
+                            <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
+                        </div>
+                        <div id="progressThird" class="overview__campgn-progress"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
         <div class="row mx-0">
             <div class="col-lg-5 col-md-7 col-sm-12 overview__earning-col">
                 <div class="overview__earning">
@@ -92,76 +157,61 @@
             </div>
 
             <div class="col-lg-7 col-md-12 col-sm-12 overview__campgn-col">
-                <h3 class="overview__title">Running Campaigns</h3>
-
-                <div class="row mx-0">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
-                        <a href="#">
-                            <div class="overview__campgn-individual">
-                                <div class="overview__campgn-title">
-                                    <h3 class="overview__campgn-heading">Back2School</h3>
-                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
-                                </div>
-                                <div id="progressFirst" class="overview__campgn-progress"></div>
-                            </div>
-                        </a>
+                <div class="overview__transaction">
+                    <div class="overview__card-head">
+                        <p class="overview__title mb-4">Transactions</p>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
-                        <a href="#">
-                            <div class="overview__campgn-individual">
-                                <div class="overview__campgn-title">
-                                    <h3 class="overview__campgn-heading">Back2School</h3>
-                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
-                                </div>
-                                <div id="progressSecond" class="overview__campgn-progress"></div>
+                    <div class="overview__card-content">
+                        <div class="overview__transaction-filter">
+                            <div class="overview__transaction-sort-wrap">
+                                <label for="transaction">Sort by:</label>
+                                <select name="transaction" id="" class="overview__transaction-sort">
+                                    <option value="Show all">Show all</option>
+                                    <option value="card payment">Card payment</option>
+                                    <option value="last one week">Last one week</option>
+                                    <option value="last one month">Last one month</option>
+                                    <option value="last three months">Last three months</option>
+                                </select>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
-                        <a href="#">
-                            <div class="overview__campgn-individual">
-                                <div class="overview__campgn-title">
-                                    <h3 class="overview__campgn-heading">Makoko Outreach</h3>
-                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
-                                </div>
-                                <div id="progressThird" class="overview__campgn-progress"></div>
+                            <div class="overview__transaction-search">
+                                <input type="search" name="" id="">
+                                <button class="overview__transaction-search-icon">
+                                    <svg class="icon icon-search-icon">
+                                        <use xlink:href="#icon-search-icon"></use>
+                                    </svg>
+                                </button>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                        <div class="overview__transaction-table-wrap">
+                            <table class="overview__transaction-table">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Amount (₦)</th>
+                                    <th>Campaign</th>
+                                    <th>Date</th>
+                                </tr>
+                                <tr>
+                                    <td>Olasunkanmi Alabi</td>
+                                    <td>20,000</td>
+                                    <td>Back2School</td>
+                                    <td>06-06-2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Dotun Jolaosho</td>
+                                    <td>30,000</td>
+                                    <td>Makoko Outreach</td>
+                                    <td>01-06-2019</td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
-                        <a href="#">
-                            <div class="overview__campgn-individual">
-                                <div class="overview__campgn-title">
-                                    <h3 class="overview__campgn-heading">Back2School</h3>
-                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
-                                </div>
-                                <div id="progressSecond" class="overview__campgn-progress"></div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0">
-                        <a href="#">
-                            <div class="overview__campgn-individual">
-                                <div class="overview__campgn-title">
-                                    <h3 class="overview__campgn-heading">Makoko Outreach</h3>
-                                    <p class="overview__campgn-price"><span>₦504,883</span> of ₦2M</p>
-                                </div>
-                                <div id="progressThird" class="overview__campgn-progress"></div>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="overview__transactions">
 
-        </div>
     </div>
 
     <div data-include="footer.html"></div>
@@ -171,6 +221,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.selectric.js"></script>
     <script src="js/main.js"></script>
 
 
@@ -186,6 +237,22 @@
 
             $("#progressThird").progressbar({
                 value: 50
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('.overview__transaction-sort').selectric({
+                onInit: function (element, obj) {
+                    const select = $(element);
+                    const placeholder = "Show all";
+                    const wrapper = select.closest('.selectric-wrapper');
+                    const label = wrapper.find('.label');
+                    if (label.text() !== placeholder) {
+                        label.text(placeholder);
+                    }
+                }
             });
         });
     </script>
